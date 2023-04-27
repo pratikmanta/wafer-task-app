@@ -1,4 +1,3 @@
-// import { SearchIcon } from '@heroicons/react/outline'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { getSearchedImage } from '../../redux/reducers/searchImageSlice'

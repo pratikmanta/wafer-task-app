@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import heartIcon from '../../assets/heart.svg'
 import plus from '../../assets/plus.svg'
 
@@ -40,7 +39,6 @@ const CardItem = ({ imageItem }: any) => {
               </div>
               <h2 style={{ color: style }}>{username}</h2>
             </div>
-            {/* <Action Icon={ArrowDownIcon} /> */}
           </div>
         </div>
       )}

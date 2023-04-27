@@ -24,7 +24,7 @@ const HeroComponent = () => {
             </div>
           </div>
           <div className='overlay-img'>
-            <img className="hero-img h-full object-cover w-full bg-bottom brightness-50" src={hero} alt="hero" />
+            <img src={hero} alt="hero" />
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ let initialState = {
     loading: true
 }
 
-// search movie list slice reducers and respective state
+// search photo list slice reducers and respective state
 export const searchImageSlice = createSlice({
     name: 'searchedImages',
     initialState,

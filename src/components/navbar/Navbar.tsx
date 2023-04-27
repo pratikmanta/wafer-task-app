@@ -5,7 +5,7 @@ import './navbar.css'
 
 const Navbar = () => {
   return (
-    <nav className="nav-wrapper flex items-center gap-4 py-3">
+    <nav className="nav-wrapper">
       <div className="logo-wrapper">
         <img src={logo} alt="unsplash-logo" className="logo-img" />
       </div>
@@ -25,7 +25,6 @@ const Navbar = () => {
           <img src={hamburgerIcon} alt='navigation'/>
         </button>
       </div>
-      {/* <MenuIcon className="w-6 h-6 cursor-pointer hover:text-neutral-800" /> */}
     </nav>
   )
 }
