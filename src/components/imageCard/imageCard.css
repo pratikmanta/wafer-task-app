@@ -1,0 +1,94 @@
+.cardList-container {
+    display: grid;
+    margin: 2rem 10rem;
+    align-items: center;
+}
+
+.cardList-columns {
+    columns: 3;
+}
+.card-item-content {
+    position: relative;
+    width: auto;
+    margin: 1rem 0;
+}
+
+.card-item-hover {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    height: 90%;
+    padding: 1.5rem;
+}
+
+.card-item-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    width: 85%;
+}
+
+.icon-container {
+    padding: 0.75rem;
+    background-color: #f8fafc;
+    width: 1.2rem;
+    height: 1.2rem;
+    z-index: 2;
+}
+.card-item-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.card-profile-wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+.card-profile-wrapper h2 {
+    font-size: 0.875rem;
+    color: white;
+}
+.rounded-profile {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.card-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.card-item-content:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, .5);
+}
+
+@media screen and (max-width: 768px) {
+    .cardList-container {
+        margin: 2rem 5rem;
+    }
+
+    .cardList-columns {
+        columns: 2;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .cardList-columns {
+        columns: 1;
+    }
+    .cardList-container {
+        margin: 2rem;
+    }
+}
